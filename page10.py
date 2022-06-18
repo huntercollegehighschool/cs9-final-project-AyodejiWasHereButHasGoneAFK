@@ -1,0 +1,65 @@
+import time
+import os
+def checkpoint1():
+    print("-> Sami sees you. His systems activate towards any intruders so he starts charging towards you, jacket and all.")
+    time.sleep(4)
+    print("AUSTIN: Uh oh, he's running straight at us. Do something!")
+    time.sleep(2)
+    os.system('clear')
+    import page1
+    start = time.time()
+    dodgesami = input("-> Sami tries to slam into you. You have 5 seconds to DODGE. Press 'd' to DODGE.")
+    end = time.time()
+    if end - time > 5:
+      print("AUSTIN: You responded too late. Crap, here he comes!")
+      time.sleep(2)
+      os.system('clear')
+      print(user.lower() + "...")
+      time.sleep(1.5)
+      os.system('clear')
+      print(user.title() + "!")
+      time.sleep(1)
+      os.system('clear')
+      print(user.upper() + "!!!")
+      time.sleep(4)
+      os.system('clear')
+      print("Oh you're done for...")
+      time.sleep(1)
+      os.system('clear')
+      checkpoint1()
+    elif dodgesami == "d":
+      print("-> You successfully dodged Sami's attack. Not that it would have done much damage...wait, actually it might just have killed you. Hmm...")
+      time.sleep(2)
+      print("-> Sami slams into a wall and collapses, weakened.")
+      time.sleep(2)
+      print("SAMI: Ugh...what is going on...")
+      time.sleep(2)
+      print("AUSTIN: Here's a debugger. Use this to remove the program in his brain.")
+      os.system('clear')
+      db = input("Press ENTER to use the debugger.")
+      time.sleep(2)
+      print("-> You use the debugger on Sami.")
+      time.sleep(3)
+      print("AUSTIN: Oh, I forgot to say, you have to answer the trivia question it gives you.")
+      start = time.time()
+      trivsami = input("DEBUGGER: What is the name of Super Mario's main villain?")
+      end = time.time()
+      if end - start > 10:
+        print("AUSTIN: Sorry, you took too long, next time, try to respond in under 10 seconds")
+      time.sleep(2.5)
+      import page4
+      time.sleep(1.5)
+      os.system('clear')
+      import page4
+      if triv0 == 'bowser' or "Bowser":
+        import page3
+        os.system('clear')
+        samibattle()
+    else:
+      print("You did not dodge in time. Sami slams into you, and it feels unexpectedly painful. Guess underneath all that jacket is some serious weight")
+      time.sleep(3)
+      print("Or maybe he's just enhanced due to the code. I don't want to know.")
+      time.sleep(2)
+      print("You go flying into a bunch of lockers. Struggling to get up, the last thing you see is Sami looming over you. Rest in peace.")
+      time.sleep(2)
+      print("YOU DIED. Try again.")

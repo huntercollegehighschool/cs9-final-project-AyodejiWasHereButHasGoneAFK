@@ -4,7 +4,7 @@ import os
 time.sleep(1)
 import page1
 start = time.time()
-triv0 = input("AUSTIN: Let's try this again, what is the first letter of the alphabet? \nYou must answer in less than 10 seconds")
+triv0 = input("AUSTIN: Let's try this again. \nYou must answer in less than 10 seconds")
 end = time.time()
 triv0 = triv0.lower()
 if end - start > 10:
@@ -14,6 +14,7 @@ if end - start > 10:
   import page4
 elif triv0 == 'a':
   import page3
+  print("AUSTIN: Wow, you're a natural! If that were an enemy they'd be toast! That was easy!")
 else:
   print("AUSTIN: I really don't know what to tell you, you messed up prett bad there...")
   time.sleep(2)
