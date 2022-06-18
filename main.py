@@ -889,7 +889,7 @@ def checkpoint4():
   print("AUSTIN: Quick, hide! If they see us they'll attack and we can't take on that many at once.")
   time.sleep(4)
   os.system('clear')
-  hide = input("Press 1 to hide behind the trashcans, press 2 to hide under a bench, and press 3 to hide in the handball corner. ")
+  hide = input("Press 1 to hide behind the trashcans, press 2 to hide under a bench, press 3 to hide in the handball corner. ")
   if hide == "1" or "2" or "3":
     print("-> You hide from the track kids, and they leave. ")
     time.sleep(6)
@@ -999,6 +999,7 @@ def checkpoint4():
         time.sleep(4)
         os.system('clear')
         again = input("YOU WERE TURNED INTO A ROBOT. CLICK ENTER TO TRY AGAIN")
+        os.system('clear')
         kayaanmichael()
       elif dodge_shotput == "d":
         print("-> Michael throws another shotput, much faster. You'll have to dodge quicker this time. ")
@@ -1322,9 +1323,13 @@ def checkpoint6():
               print("-> You get close to Mr. Cheng's computer and quietly sync your debugger with his keyboard. Whatever you type now affects whatis being typed on his computer. Austin really planned ahead with his gadget! You must save Austin and thank him. ")
               time.sleep(5)
               def breakcheng():
-                chengthing = input("-> Mr. Cheng is writing code to fix his computer too fast for you to unscramble. You must break his code by making syntax errors. Press ENTER to continue.")
+                print("-> Mr. Cheng is writing code to fix his computer too fast for you to unscramble. ")
+                time.sleep(3)
+                os.system('clear')
+                chengthing = input("You must break his code by making syntax errors. Press ENTER to continue.")
                 os.system('clear')        
                 print("When he types a function you must type a counter-fucntion and vice versa. str <-> int. while <-> for. print <-> clear. if <-> else. Press ENTER to continue. ")
+                time.sleep(4)
                 os.system('clear')
                 time.sleep(7)
                 print("3!")
@@ -1545,8 +1550,6 @@ def checkpoint6():
                     print("Thanks for playing, we'll see you next time! - Chris and Deji ")
                 else:
                   messup = input("You mess up while typing on the debugger, and Mr. Cheng regains control of the computer, and start firing code again. You'll have to try to get close again. ")
-                  os.system('clear')
-                  chengp2()
                   time.sleep(3)
               breakcheng()
             else:
@@ -1621,7 +1624,7 @@ def checkpoint5():
       scram6 = input("rckoet: ")
       os.system('clear')
       if scram4 == "grenade" and scram5 == "missile" and scram6 == "rocket":
-        print("-> You have successfully dodge all of Austin's attacks. You run up to Austin and prepare the debugger, but he retreats, almost like being pulled by strings. ")
+        print("-> You have successfully dodged all of Austin's attacks. You run up to Austin and prepare the debugger, but he retreats, almost like being pulled by strings. ")
         time.sleep(3)
         os.system('clear')
         print("-> Austin!!!! Come back!! It's too late. Austin is gone. In his place...is the mastermind himself. ")
@@ -1814,7 +1817,7 @@ if triv0 == 'a':
   os.system('clear')
   print("AUSTIN: These robots are very strong and loyal to the programmer. They act like themselves around other robots, but when they see you, the only one not yet a robot...") 
   time.sleep(4)
-  print("They will use their superpowers to knock you unconcious, then bring you to the programmer to become the final 9-3 robot." )
+  print("They will use their superpowers to knock you unconscious, then bring you to the programmer to become the final 9-3 robot." )
   time.sleep(3)
   print("Sounds scary, right? I wonder why this is happening. Whatever the reason, we've got to stop it and save everyone! ")
   time.sleep(5)
@@ -1906,6 +1909,7 @@ if triv0 == 'a':
   os.system('clear')
   print("???: Hi, ")
   time.sleep(0.5)
+  os.system('clear')
   print("???: Hi," + user + ".")
   time.sleep(1.2)
   print("I've been waiting for you. ")
